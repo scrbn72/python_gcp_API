@@ -3,10 +3,22 @@
 ## Description
 This project demonstrates how to interact with Google Cloud Platform services using Python, particularly BigQuery and Cloud Storage APIs. The project verifies the existence of a BigQuery table and a Cloud Storage bucket.
 
-## FlowChart
-![Project FlowChart](images/flowchart.png)
-
 ## Repo Architecture
+src/python_gcp_API/
+├── _init_.py
+├── libraries/
+│   ├── _init_.py
+│   ├── bigquery_api.py
+│   └── storage_api.py
+├── utils/
+│   ├── _init_.py
+│   └── credentials.py
+└── main.py
+
+test/test_python_gcp_API/
+├── _init_.py
+├── test_bigquery_api.py
+└── test_storage_api.py
 
 ## Prerequisites
 - Python 3.10 or later
@@ -17,7 +29,8 @@ This project demonstrates how to interact with Google Cloud Platform services us
 ## Usage
 1. Clone the repository:
    bash
-   git clone https://github.com/tuo-username/python_gcp_API.git
+   git clone https://github.com/scrbn72/python_gcp_API.git
+
    cd python_gcp_API
 
 
@@ -31,14 +44,9 @@ This project demonstrates how to interact with Google Cloud Platform services us
    export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials-file.json"
 
 
-4. Run the verification script:
+4. Run tests:
    bash
-   poetry run python src/python_gcp_API/verify_gcp.py
-
-
-5. Run tests:
-   bash
-   poetry run pytest
+   poetry run pytest test/test_python_gcp_API
 
 
 ## Further Improvements
