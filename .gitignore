@@ -1,0 +1,3 @@
+# Ignora cartella IntellJ IDEA
+.idea/
+googleAPI.iml
