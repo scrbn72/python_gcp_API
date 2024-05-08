@@ -4,21 +4,7 @@
 This project demonstrates how to interact with Google Cloud Platform services using Python, particularly BigQuery and Cloud Storage APIs. The project verifies the existence of a BigQuery table and a Cloud Storage bucket.
 
 ## Repo Architecture
-src/python_gcp_API/
-├── _init_.py
-├── libraries/
-│   ├── _init_.py
-│   ├── bigquery_api.py
-│   └── storage_api.py
-├── utils/
-│   ├── _init_.py
-│   └── credentials.py
-└── main.py
-
-test/test_python_gcp_API/
-├── _init_.py
-├── test_bigquery_api.py
-└── test_storage_api.py
+![Project Architecture](images/architettura_progetto_api.png)
 
 ## Prerequisites
 - Python 3.10 or later
